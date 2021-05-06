@@ -1,3 +1,5 @@
+//リファクタリング要(SCSS)
+
 input {
   border-radius: 16px;
   border: none;
@@ -9,12 +11,12 @@ button {
   border-radius: 16px;
   border: none;
   padding: 4px 16px;
-}
 
-button:hover {
-  background-color: #ff7fff;
-  color: #fff;
-  cursor: pointer;
+  &:hover {
+    background-color: #ff7fff;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 .input-area {
@@ -51,12 +53,7 @@ button:hover {
 }
 
 .list-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-bottom: 4px;
 }
-/*# sourceMappingURL=style.css.map */
